@@ -16,7 +16,6 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	c09874b1892e3b70ac11f2900e7a9a4e
 URL:		http://search.cpan.org/dist/Data-Serializer/
-BuildRequires:	perl-Data-Dumper >= 2.08
 BuildRequires:	perl-Digest-SHA1
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
