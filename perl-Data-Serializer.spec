@@ -18,7 +18,6 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 URL:		http://search.cpan.org/dist/Data-Serializer/
 BuildRequires:	perl-Data-Dumper >= 2.08
 BuildRequires:	perl-Digest-SHA1
-BuildRequires:	perl-IO-File
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
