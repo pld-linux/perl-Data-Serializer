@@ -16,12 +16,13 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	c09874b1892e3b70ac11f2900e7a9a4e
 URL:		http://search.cpan.org/dist/Data-Serializer/
+BuildRequires:	perl-Data-Dumper >= 2.08
+BuildRequires:	perl-Digest-SHA1
+BuildRequires:	perl-IO-File
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-#%define		_noautoreq	'perl(anything_fake_or_conditional)'
 
 %description
 Provides a unified interface to the various serializing modules
@@ -29,8 +30,8 @@ currently available. Adds the functionality of both compression and
 encryption.
 
 %description -l pl
-Dostarcza zunifikowanego interfejsu do ró¿nych modu³u serializacji
-danych. Posiada wsparcie zarówno dla kompresji jak i szyfrowania.
+Dostarcza zunifikowany interfejs do ró¿nych modu³ów serializacji danych.
+Posiada wsparcie zarówno dla kompresji jak i szyfrowania.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
