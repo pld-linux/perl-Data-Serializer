@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Data
-%define	pnam	Serializer
+%define		pdir	Data
+%define		pnam	Serializer
 Summary:	Modules that serialize data structures
 Summary(pl):	Modu³y do serializacji struktur danych
 Name:		perl-Data-Serializer
