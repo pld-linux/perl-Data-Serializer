@@ -30,8 +30,8 @@ currently available. Adds the functionality of both compression and
 encryption.
 
 %description -l pl
-Dostarcza zunifikowany interfejs do ró¿nych modu³ów serializacji danych.
-Posiada wsparcie zarówno dla kompresji jak i szyfrowania.
+Dostarcza zunifikowany interfejs do ró¿nych modu³ów serializacji
+danych. Posiada wsparcie zarówno dla kompresji jak i szyfrowania.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -57,5 +57,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README
 %{perl_vendorlib}/Data/Serializer.pm
-%{perl_vendorlib}/Data/Serializer/
+%{perl_vendorlib}/Data/Serializer
 %{_mandir}/man3/*
