@@ -7,7 +7,7 @@
 %define	pnam	Serializer
 Summary:	Modules that serialize data structures
 Summary(pl):	Modu³y do serializacji struktur danych
-Name:		perl-%{pdir}-%{pnam}
+Name:		perl-Data-Serializer
 Version:	0.25
 Release:	1
 # same as perl
