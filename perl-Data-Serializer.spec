@@ -9,7 +9,7 @@ Summary:	Modules that serialize data structures
 Summary(pl):	Modu³y do serializacji struktur danych
 Name:		perl-Data-Serializer
 Version:	0.36
-Release:	0.1
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -19,6 +19,18 @@ URL:		http://search.cpan.org/dist/Data-Serializer/
 BuildRequires:	perl-Digest-SHA1
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+%if %{with autodeps} || %{with tests}
+BuildRequires:	perl-Config-General
+BuildRequires:	perl-Data-Denter
+#BuildRequires:	perl-Data-Taxi
+BuildRequires:	perl-Digest-SHA
+BuildRequires:	perl-FreezeThaw
+BuildRequires:	perl-PHP-Serialization
+BuildRequires:	perl-XML-Dumper
+BuildRequires:	perl-XML-Simple
+BuildRequires:	perl-YAML
+BuildRequires:	perl-YAML-Syck
+%endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -54,6 +66,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
+%{perl_vendorlib}/auto/Data/Serializer
 %{perl_vendorlib}/Data/Serializer.pm
 %{perl_vendorlib}/Data/Serializer
 %{_mandir}/man3/*
