@@ -6,7 +6,7 @@
 %define		pdir	Data
 %define		pnam	Serializer
 Summary:	Modules that serialize data structures
-Summary(pl):	Modu≥y do serializacji struktur danych
+Summary(pl.UTF-8):   Modu≈Çy do serializacji struktur danych
 Name:		perl-Data-Serializer
 Version:	0.36
 Release:	1
@@ -39,9 +39,9 @@ Provides a unified interface to the various serializing modules
 currently available. Adds the functionality of both compression and
 encryption.
 
-%description -l pl
-Dostarcza zunifikowany interfejs do rÛønych modu≥Ûw serializacji
-danych. Posiada wsparcie zarÛwno dla kompresji jak i szyfrowania.
+%description -l pl.UTF-8
+Dostarcza zunifikowany interfejs do r√≥≈ºnych modu≈Ç√≥w serializacji
+danych. Posiada wsparcie zar√≥wno dla kompresji jak i szyfrowania.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
