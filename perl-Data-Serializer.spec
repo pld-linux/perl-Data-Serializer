@@ -6,7 +6,7 @@
 %define		pdir	Data
 %define		pnam	Serializer
 Summary:	Modules that serialize data structures
-Summary(pl.UTF-8):   Moduły do serializacji struktur danych
+Summary(pl.UTF-8):	Moduły do serializacji struktur danych
 Name:		perl-Data-Serializer
 Version:	0.36
 Release:	1
