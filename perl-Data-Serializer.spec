@@ -8,13 +8,13 @@
 Summary:	Modules that serialize data structures
 Summary(pl.UTF-8):	Moduły do serializacji struktur danych
 Name:		perl-Data-Serializer
-Version:	0.36
+Version:	0.41
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	542ebed29e8337531dbe944f69e73c70
+# Source0-md5:	5e65613c7bed07a61c6be5e401cacf34
 URL:		http://search.cpan.org/dist/Data-Serializer/
 BuildRequires:	perl-Digest-SHA1
 BuildRequires:	perl-devel >= 1:5.8.0
