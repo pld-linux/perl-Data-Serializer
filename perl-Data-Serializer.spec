@@ -9,13 +9,13 @@
 Summary:	Modules that serialize data structures
 Summary(pl.UTF-8):	Moduły do serializacji struktur danych
 Name:		perl-Data-Serializer
-Version:	0.43
+Version:	0.45
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Data/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	9bdc9f3a4b50080734288712fdd08e55
+# Source0-md5:	0002f2fbac25bafff9edc4a7b75ccedf
 URL:		http://search.cpan.org/dist/Data-Serializer/
 BuildRequires:	perl-Digest-SHA1
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -67,7 +67,19 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_vendorlib}/auto/Data/Serializer
 %{perl_vendorlib}/Data/Serializer.pm
-%{perl_vendorlib}/Data/Serializer
+%dir %{perl_vendorlib}/Data/Serializer/
+%{perl_vendorlib}/Data/Serializer/*.pm
+%{perl_vendorlib}/Data/Serializer/Config/General.pm
+%dir %{perl_vendorlib}/Data/Serializer/Data
+%{perl_vendorlib}/Data/Serializer/Data/*.pm
+%dir %{perl_vendorlib}/Data/Serializer/JSON
+%{perl_vendorlib}/Data/Serializer/JSON/*.pm
+%dir %{perl_vendorlib}/Data/Serializer/PHP
+%{perl_vendorlib}/Data/Serializer/PHP/*.pm
+%dir %{perl_vendorlib}/Data/Serializer/XML
+%{perl_vendorlib}/Data/Serializer/XML/*.pm
+%dir %{perl_vendorlib}/Data/Serializer/YAML
+%{perl_vendorlib}/Data/Serializer/YAML/*.pm
+
 %{_mandir}/man3/*
