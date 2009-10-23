@@ -10,7 +10,7 @@ Summary:	Modules that serialize data structures
 Summary(pl.UTF-8):	Moduły do serializacji struktur danych
 Name:		perl-Data-Serializer
 Version:	0.49
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -70,6 +70,7 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorlib}/Data/Serializer.pm
 %dir %{perl_vendorlib}/Data/Serializer/
 %{perl_vendorlib}/Data/Serializer/*.pm
+%dir %{perl_vendorlib}/Data/Serializer/Config
 %{perl_vendorlib}/Data/Serializer/Config/General.pm
 %dir %{perl_vendorlib}/Data/Serializer/Data
 %{perl_vendorlib}/Data/Serializer/Data/*.pm
